@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class demo{
+public static void main(String[] arg){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the 1st denomination :500");
+System.out.println("Enter the 1st denomination number of notes : ");
+int a=sc.nextInt();
+System.out.println("Enter the 2st denomination :100");
+System.out.println("Enter the 2st denomination number of notes : ");
+int b=sc.nextInt();
+System.out.println("Enter the 3st denomination :200");
+System.out.println("Enter the 3st denomination number of notes : ");
+int c=sc.nextInt();
+System.out.println("Enter the 4st denomination :2000");
+System.out.println("Enter the 4st denomination number of notes : ");
+int d=sc.nextInt();
+int e=(500*a)+(100*b)+(200*c)+(2000*d);
+System.out.print("Enter total amount : "+e);
+}
+}
