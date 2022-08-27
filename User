@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class student{
+public static void main(String[] args){
+Scanner sc= new Scanner(System.in);
+System.out.print("Enter total user : ");
+int a=sc.nextInt();
+System.out.print("Enter staff user : ");
+int b=sc.nextInt();
+int c=a-b;
+System.out.print("Enter student user : "+c);
+}
+}
