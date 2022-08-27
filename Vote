@@ -1,0 +1,18 @@
+import java.util.scanner;
+public class age{
+public staic void main(string args[]){
+Scanner s=new Scanner(system.in);
+system.out.println("enter the age");
+int a=s.nextInt();
+if(a>=18){
+system.out.println(""eligible to vote");
+}
+else if(a<18){
+int c=18-a;
+system.out.println(+c"years need to vote");
+}
+else{
+system.out.println("error");
+}
+}
+}
