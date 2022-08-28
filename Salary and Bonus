@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class java{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String a;
+int b;
+System.out.print("Enter Your Grade : ");
+a=sc.nextLine();
+System.out.print("Enter Your Salary : ");
+b=sc.nextInt();
+if(a.equals('a'))
+{
+if(b<10000)
+{
+System.out.print("Your Salary is ");
+System.out.print(b+(b*0.07));
+}
+System.out.print("Your Salary is ");
+System.out.print(b+(b*0.05));
+}
+
+else if(a.equals('b'))
+{
+if(b<10000)
+{
+System.out.print("Your Salary is ");
+System.out.print(b+(b*0.12));
+}
+System.out.print("Your Salary is ");
+System.out.print(b+(b*0.10));
+}
+}
+}
