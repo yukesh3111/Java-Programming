@@ -1,0 +1,66 @@
+import java.util.*;
+public class intrest{
+	static void intrest(int age,int princ,int noy){
+		if(age>58)
+		{
+			float c=(princ*noy*12)/100;
+			System.out.print("Your intrest is "+c);
+		}
+		else if(age<58)
+		{
+			float d=(princ*noy*10)/100;
+			System.out.print("Your intrest is "+d);
+
+		}
+		else
+		{
+			System.out.print("Error");
+		}
+
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		try{
+			System.out.print("Enter your age : ");
+			int age=sc.nextInt();
+			if(age>0)
+			{
+				System.out.print("Enter principle amount : ");
+				int princ=sc.nextInt();
+				if(princ>0)
+				{
+					System.out.print("Enter Year : ");
+					int noy=sc.nextInt();
+					if(noy>0)
+					{
+						intrest(age,princ,noy);	
+					}
+					else
+					{
+						System.out.print("Error");
+					}
+					
+
+				}
+				else
+				{
+					System.out.print("Error");
+				}
+				
+
+			}
+			else
+			{
+				System.out.print("Error");
+			}
+			
+
+		}
+		catch(InputMismatchException a)
+		{
+			System.out.print("Error");
+		}
+		
+	}
+}
