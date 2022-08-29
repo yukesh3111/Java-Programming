@@ -1,0 +1,29 @@
+import java.util.*;
+public class mul{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		try{
+			System.out.println("Enter Table number : ");
+			int m=sc.nextInt();
+			System.out.println("Enter bottom number : ");
+			int n=sc.nextInt();
+			for(int i=1;i<=n;i++)
+			{
+				int a=m*i;
+				System.out.println(m+"x"+i+"="+m*i);
+				//System.out.print("*");
+				//System.out.print(i);
+				//System.out.print("=");
+				//System.out.print(a);
+				//System.out.println(" ");
+			}
+
+		}
+		catch(InputMismatchException a)
+		{
+			System.out.print("Error");
+		}
+
+		
+	}
+}
