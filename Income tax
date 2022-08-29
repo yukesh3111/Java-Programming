@@ -1,0 +1,50 @@
+import java.util.*;
+public class income{
+	public static void main(String agr[]){
+		Scanner sc=new Scanner(System.in);
+		try{
+			int inc;
+			System.out.print("Enter a income : ");
+			inc=sc.nextInt();
+			if(inc>=0)
+			{
+				if(inc<=150000)
+				{
+					System.out.print("No Income Tax for You");
+				}
+				else if(inc>150000 && inc<=300000)
+				{
+					int c=(inc*10)/100;
+					System.out.print("Your income tax is "+ c);
+				}
+				else if(inc>300000 && inc<=500000)
+				{
+					int c=(inc*20)/100;
+					System.out.print("Your income tax is "+ c);
+				}
+				else if(inc>500000 && inc<=1000000)
+				{
+					int c=(inc*30)/100;
+					System.out.print("Your income tax is "+ c);
+				}
+				else if (inc>1000000) {
+					int c=(inc*40)/100;
+					System.out.print("Your income tax is "+ c);
+					
+				}
+			}
+			else
+			{
+				System.out.print("Error");
+			}
+
+		}
+		catch(InputMismatchException a)
+		{
+			System.out.print("Error");
+
+		}
+		
+	
+	}
+}
