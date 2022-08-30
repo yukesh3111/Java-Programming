@@ -1,0 +1,41 @@
+import java.util.*;
+public class leap{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		try{
+			int a;
+			a=sc.nextInt();
+			if(a>1000)
+			{
+				if(a%4==0 || a%400==0)
+				{
+					System.out.println(a+" is leap year");
+					System.out.println(a+4 +" is Next leap year");
+					System.out.println(a-4 +" is previous leap year");
+				}
+				else
+				{
+					int a1,b,c;
+					a1=a%4;
+					b=a-a1;
+					c=b+4;
+
+					System.out.println(a +" is Not leap year");
+					System.out.println(c +" is Next leap year");
+					System.out.println(b+ " is previous leap year");		
+
+
+				}
+			}
+			else{
+				System.out.println("Invalid Input");		
+			}
+			
+		}
+		catch(InputMismatchException v)
+		{
+			System.out.println("Invalid Input");
+		}
+		
+	}
+}
