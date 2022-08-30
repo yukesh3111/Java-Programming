@@ -1,0 +1,59 @@
+import java.util.*;
+public class string{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		String a;
+		char a1;
+		int flage=0;
+		int count=0;
+		System.out.println("Enter a string : ");
+		a=sc.nextLine();
+		System.out.println("Enter a search Character : ");
+		a1=sc.next().charAt(0);
+		for(int i=0;i<=a.length()-1;i++)
+		{
+			char a2=a.charAt(i);
+			
+			if(a2==a1)
+			{
+				count=count+1;
+				System.out.print("Yes "+a2+" is found");
+				System.out.print(" at index number "+ i);
+				flage=1;
+				System.out.println(" ");
+				break;
+			}
+		}
+		if(flage==1)
+		{
+			
+			System.out.println(" Count is" +count);
+		}
+		else if(flage==0)
+		{
+			System.out.println(" Match is not found ");
+
+		}
+		char[] arr=a.toCharArray();
+		int i=0;
+		while(i<arr.length)
+		{
+			int j=i+1;
+			while(j<arr.length)
+			{
+				if(arr[i]<arr[j])
+				{
+					char temp;
+					temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+				j+=1;
+			}
+			i+=1;
+		}
+		System.out.println("Reverse order is ");
+		System.out.println(arr);
+	}
+	
+}
